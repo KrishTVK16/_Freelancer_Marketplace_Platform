@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Freelancer Marketplace Platform</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                <span class="logo-icon">F</span>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">FreelanceHub</span>
+                <span class="logo-subtitle">Find Top Talent & Services</span>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="client-dashboard.html" class="btn btn-primary">Dashboard</a>
+                <a href="login.html" class="btn btn-outline">Logout</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <div class="dashboard">
+        <div class="dashboard-sidebar">
+            <h3 style="margin-bottom: 1.5rem;">Settings</h3>
+            <ul class="sidebar-nav">
+                <li><a href="client-dashboard.html">Dashboard</a></li>
+                <li><a href="edit-profile.html" class="active">Edit Profile</a></li>
+                <li><a href="settings.html">Account Settings</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+            </ul>
+        </div>
+
+        <div class="dashboard-content">
+            <h1>Edit Profile</h1>
+
+            <div class="card" style="margin-top: 2rem;">
+                <h2 style="margin-bottom: 1.5rem;">Profile Picture</h2>
+                <div class="flex gap-2" style="align-items: center;">
+                    <img src="https://via.placeholder.com/100" alt="Profile" style="width: 100px; height: 100px; border-radius: 50%;">
+                    <div>
+                        <input type="file" class="form-control" style="width: auto; margin-bottom: 0.5rem;">
+                        <p style="color: var(--text-gray); font-size: 0.875rem;">JPG, PNG or GIF. Max size 2MB</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 2rem;">
+                <h2 style="margin-bottom: 1.5rem;">Personal Information</h2>
+                <form>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label class="form-label">First Name *</label>
+                            <input type="text" class="form-control" value="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name *</label>
+                            <input type="text" class="form-control" value="Smith" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-control" value="john.smith@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" value="+1 (555) 123-4567">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Location</label>
+                        <input type="text" class="form-control" value="New York, USA">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Bio</label>
+                        <textarea class="form-control" rows="5">I'm a passionate web developer with over 5 years of experience building modern web applications.</textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+
+            <div class="card" style="margin-top: 2rem;">
+                <h2 style="margin-bottom: 1.5rem;">Professional Information</h2>
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Title/Profession</label>
+                        <input type="text" class="form-control" value="Web Developer">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Hourly Rate</label>
+                        <input type="number" class="form-control" value="75" min="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Skills</label>
+                        <input type="text" class="form-control" value="React, Node.js, MongoDB, Express">
+                        <p style="color: var(--text-gray); font-size: 0.875rem; margin-top: 0.5rem;">Separate skills with commas</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Portfolio URL</label>
+                        <input type="url" class="form-control" value="https://portfolio.example.com">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FreelanceHub</h4>
+                <p style="color: rgba(255,255,255,0.7);">Connecting talented freelancers with clients worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>For Clients</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Freelancers</h4>
+                <ul>
+                    <li><a href="register.html">Become a Freelancer</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="pricing.html">Earn Money</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FreelanceHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

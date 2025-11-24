@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Marketplace Platform - Find Top Talent & Services</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                <span class="logo-icon">F</span>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">FreelanceHub</span>
+                <span class="logo-subtitle">Find Top Talent & Services</span>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Top Freelancers & Get Your Projects Done</h1>
+            <p>Connect with skilled professionals from around the world. Get quality work delivered on time, every time.</p>
+            <div class="hero-search">
+                <input type="text" placeholder="Search for services, skills, or freelancers..." class="search-input">
+                <button class="btn btn-primary">Search</button>
+            </div>
+            <div class="flex flex-center gap-2 mt-4">
+                <a href="register.html" class="btn btn-secondary" style="background: rgba(255,255,255,0.2); color: white; border-color: white;">Post a Job</a>
+                <a href="register.html" class="btn btn-secondary" style="background: rgba(255,255,255,0.2); color: white; border-color: white;">Become a Freelancer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Browse by Category</h2>
+                <p>Explore our wide range of professional services</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>5,234 Services</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Design</h3>
+                    <p>3,891 Services</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">✍️</div>
+                    <h3>Writing</h3>
+                    <p>2,456 Services</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>1,923 Services</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📊</div>
+                    <h3>Marketing</h3>
+                    <p>4,567 Services</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎬</div>
+                    <h3>Video Editing</h3>
+                    <p>1,234 Services</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🔊</div>
+                    <h3>Music & Audio</h3>
+                    <p>987 Services</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💼</div>
+                    <h3>Business</h3>
+                    <p>2,345 Services</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="categories.html" class="btn btn-primary">View All Categories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Freelancers -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Top Rated Freelancers</h2>
+                <p>Work with the best professionals in the industry</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="card profile-card">
+                    <img src="assets/images/imgSarahJohnson.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">Sarah Johnson</h4>
+                    <p class="text-gray">Web Developer</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.9 (127)</span>
+                    </div>
+                    <p class="card-body">Expert in React, Node.js, and full-stack development</p>
+                    <div class="card-footer">
+                        <span class="price">$75<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <img src="assets/images/imgMichaelChen.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">Michael Chen</h4>
+                    <p class="text-gray">UI/UX Designer</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.8 (98)</span>
+                    </div>
+                    <p class="card-body">Creating beautiful and functional user experiences</p>
+                    <div class="card-footer">
+                        <span class="price">$65<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <img src="assets/images/imgEmilyRodriguez.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">Emily Rodriguez</h4>
+                    <p class="text-gray">Content Writer</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.9 (156)</span>
+                    </div>
+                    <p class="card-body">SEO-optimized content that converts</p>
+                    <div class="card-footer">
+                        <span class="price">$45<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <img src="assets/images/imgDavidKim.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">David Kim</h4>
+                    <p class="text-gray">Digital Marketer</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.7 (203)</span>
+                    </div>
+                    <p class="card-body">Grow your business with proven marketing strategies</p>
+                    <div class="card-footer">
+                        <span class="price">$55<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="freelancers.html" class="btn btn-primary">View All Freelancers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Get started in three simple steps</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card text-center">
+                    <div class="category-icon" style="margin: 0 auto 1rem;">1</div>
+                    <h3>Post a Job or Browse Services</h3>
+                    <p>Describe your project or explore our marketplace of services</p>
+                </div>
+                <div class="card text-center">
+                    <div class="category-icon" style="margin: 0 auto 1rem;">2</div>
+                    <h3>Choose a Freelancer</h3>
+                    <p>Review profiles, portfolios, and ratings to find the perfect match</p>
+                </div>
+                <div class="card text-center">
+                    <div class="category-icon" style="margin: 0 auto 1rem;">3</div>
+                    <h3>Get Work Done</h3>
+                    <p>Collaborate securely and pay only when you're satisfied</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="how-it-works.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by thousands of businesses worldwide</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p class="card-body">"Found the perfect developer for our project. The quality of work exceeded our expectations!"</p>
+                    <div class="flex gap-2 mt-3">
+                        <img src="assets/images/imgJohnSmith.jfif" alt="Client" style="width: 50px; height: 50px; border-radius: 50%;">
+                        <div>
+                            <strong>John Smith</strong>
+                            <p class="text-gray" style="font-size: 0.875rem; margin: 0;">CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p class="card-body">"The platform made it so easy to find talented freelancers. Highly recommended!"</p>
+                    <div class="flex gap-2 mt-3">
+                        <img src="assets/images/imgLisaAnderson.jfif" alt="Client" style="width: 50px; height: 50px; border-radius: 50%;">
+                        <div>
+                            <strong>Lisa Anderson</strong>
+                            <p class="text-gray" style="font-size: 0.875rem; margin: 0;">Marketing Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p class="card-body">"Outstanding service and professional freelancers. Will definitely use again!"</p>
+                    <div class="flex gap-2 mt-3">
+                        <img src="assets/images/imgRobertTaylor.jfif" alt="Client" style="width: 50px; height: 50px; border-radius: 50%;">
+                        <div>
+                            <strong>Robert Taylor</strong>
+                            <p class="text-gray" style="font-size: 0.875rem; margin: 0;">Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="testimonials.html" class="btn btn-primary">Read More Testimonials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 1rem;">Ready to Get Started?</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; margin-bottom: 2rem;">Join thousands of clients and freelancers working together</p>
+            <div class="flex flex-center gap-2">
+                <a href="register.html" class="btn" style="background: white; color: var(--primary-color);">Sign Up Free</a>
+                <a href="contact.html" class="btn btn-secondary" style="background: rgba(255,255,255,0.2); color: white; border-color: white;">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FreelanceHub</h4>
+                <p style="color: rgba(255,255,255,0.7);">Connecting talented freelancers with clients worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>For Clients</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Freelancers</h4>
+                <ul>
+                    <li><a href="register.html">Become a Freelancer</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="pricing.html">Earn Money</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FreelanceHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+

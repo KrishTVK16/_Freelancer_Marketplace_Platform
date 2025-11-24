@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Freelancer Marketplace Platform</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                <span class="logo-icon">F</span>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">FreelanceHub</span>
+                <span class="logo-subtitle">Find Top Talent & Services</span>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="client-dashboard.html" class="btn btn-primary">Dashboard</a>
+                <a href="login.html" class="btn btn-outline">Logout</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <div class="dashboard">
+        <div class="dashboard-sidebar">
+            <h3 style="margin-bottom: 1.5rem;">Settings</h3>
+            <ul class="sidebar-nav">
+                <li><a href="client-dashboard.html">Dashboard</a></li>
+                <li><a href="edit-profile.html">Edit Profile</a></li>
+                <li><a href="settings.html" class="active">Account Settings</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+            </ul>
+        </div>
+
+        <div class="dashboard-content">
+            <h1>Account Settings</h1>
+
+            <div class="card" style="margin-top: 2rem;">
+                <h2 style="margin-bottom: 1.5rem;">Change Password</h2>
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Current Password *</label>
+                        <input type="password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">New Password *</label>
+                        <input type="password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Confirm New Password *</label>
+                        <input type="password" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update Password</button>
+                </form>
+            </div>
+
+            <div class="card" style="margin-top: 2rem;">
+                <h2 style="margin-bottom: 1.5rem;">Notification Settings</h2>
+                <form>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                            <span>Email Notifications</span>
+                            <input type="checkbox" checked>
+                        </label>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                            <span>Order Updates</span>
+                            <input type="checkbox" checked>
+                        </label>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                            <span>New Messages</span>
+                            <input type="checkbox" checked>
+                        </label>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                            <span>Marketing Emails</span>
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Preferences</button>
+                </form>
+            </div>
+
+            <div class="card" style="margin-top: 2rem;">
+                <h2 style="margin-bottom: 1.5rem;">Payment Methods</h2>
+                <div style="margin-bottom: 1.5rem;">
+                    <div class="flex flex-between" style="padding: 1rem; background: var(--bg-light); border-radius: var(--radius-md); margin-bottom: 1rem;">
+                        <div>
+                            <strong>**** **** **** 1234</strong>
+                            <p style="color: var(--text-gray); font-size: 0.875rem; margin: 0.25rem 0 0;">Expires 12/25</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline">Remove</button>
+                    </div>
+                    <a href="#" class="btn btn-outline">Add Payment Method</a>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 2rem; border-left: 4px solid #ef4444;">
+                <h2 style="margin-bottom: 1.5rem; color: #ef4444;">Danger Zone</h2>
+                <p style="color: var(--text-gray); margin-bottom: 1.5rem;">Once you delete your account, there is no going back. Please be certain.</p>
+                <button class="btn" style="background: #ef4444; color: white;">Delete Account</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FreelanceHub</h4>
+                <p style="color: rgba(255,255,255,0.7);">Connecting talented freelancers with clients worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>For Clients</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Freelancers</h4>
+                <ul>
+                    <li><a href="register.html">Become a Freelancer</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="pricing.html">Earn Money</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FreelanceHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

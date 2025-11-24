@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard - Freelancer Marketplace Platform</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                <span class="logo-icon">F</span>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">FreelanceHub</span>
+                <span class="logo-subtitle">Find Top Talent & Services</span>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="client-dashboard.html" class="btn btn-primary">Dashboard</a>
+                <a href="login.html" class="btn btn-outline">Logout</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <div class="dashboard">
+        <div class="dashboard-sidebar">
+            <h3 style="margin-bottom: 1.5rem;">Dashboard</h3>
+            <ul class="sidebar-nav">
+                <li><a href="client-dashboard.html" class="active">Overview</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a href="jobs.html">Posted Jobs</a></li>
+                <li><a href="post-job.html">Post a Job</a></li>
+                <li><a href="freelancers.html">Find Freelancers</a></li>
+                <li><a href="edit-profile.html">Edit Profile</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="dashboard-content">
+            <div class="flex flex-between mb-4">
+                <h1>Dashboard</h1>
+                <a href="post-job.html" class="btn btn-primary">Post a Job</a>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Active Orders</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Completed Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$15,450</div>
+                    <div class="stat-label">Total Spent</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Posted Jobs</div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 2rem;">
+                <h2 style="margin-bottom: 1.5rem;">Active Orders</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Project</th>
+                                <th>Freelancer</th>
+                                <th>Status</th>
+                                <th>Budget</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>E-commerce Website</strong>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray); margin: 0;">Due: Dec 15, 2024</p>
+                                </td>
+                                <td>Sarah Johnson</td>
+                                <td><span class="badge badge-warning">In Progress</span></td>
+                                <td>$2,500</td>
+                                <td><a href="order-details.html" class="btn btn-sm btn-outline">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Logo Design</strong>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray); margin: 0;">Due: Dec 10, 2024</p>
+                                </td>
+                                <td>Michael Chen</td>
+                                <td><span class="badge badge-warning">In Progress</span></td>
+                                <td>$150</td>
+                                <td><a href="order-details.html" class="btn btn-sm btn-outline">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Content Writing</strong>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray); margin: 0;">Due: Dec 8, 2024</p>
+                                </td>
+                                <td>Emily Rodriguez</td>
+                                <td><span class="badge badge-success">Completed</span></td>
+                                <td>$300</td>
+                                <td><a href="order-details.html" class="btn btn-sm btn-outline">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="orders.html" class="btn btn-outline">View All Orders</a>
+                </div>
+            </div>
+
+            <div class="grid grid-2" style="margin-top: 2rem; gap: 2rem;">
+                <div class="card">
+                    <h3>Recent Activity</h3>
+                    <div style="margin-top: 1rem;">
+                        <div style="padding: 1rem 0; border-bottom: 1px solid var(--border-color);">
+                            <p style="margin: 0;"><strong>Sarah Johnson</strong> submitted a milestone</p>
+                            <p style="font-size: 0.875rem; color: var(--text-gray); margin: 0.25rem 0 0;">2 hours ago</p>
+                        </div>
+                        <div style="padding: 1rem 0; border-bottom: 1px solid var(--border-color);">
+                            <p style="margin: 0;"><strong>Michael Chen</strong> sent a message</p>
+                            <p style="font-size: 0.875rem; color: var(--text-gray); margin: 0.25rem 0 0;">5 hours ago</p>
+                        </div>
+                        <div style="padding: 1rem 0;">
+                            <p style="margin: 0;">Order <strong>#1234</strong> was completed</p>
+                            <p style="font-size: 0.875rem; color: var(--text-gray); margin: 0.25rem 0 0;">1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Quick Actions</h3>
+                    <div style="margin-top: 1rem;">
+                        <a href="post-job.html" class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;">Post a New Job</a>
+                        <a href="freelancers.html" class="btn btn-outline" style="width: 100%; margin-bottom: 1rem;">Browse Freelancers</a>
+                        <a href="services.html" class="btn btn-outline" style="width: 100%;">Browse Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FreelanceHub</h4>
+                <p style="color: rgba(255,255,255,0.7);">Connecting talented freelancers with clients worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>For Clients</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Freelancers</h4>
+                <ul>
+                    <li><a href="register.html">Become a Freelancer</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="pricing.html">Earn Money</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FreelanceHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

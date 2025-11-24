@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Freelancer Marketplace Platform</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                <span class="logo-icon">F</span>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">FreelanceHub</span>
+                <span class="logo-subtitle">Find Top Talent & Services</span>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <div class="breadcrumb container">
+        <a href="index.html">Home</a> / <span>Services</span>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h1>Browse Services</h1>
+                <p>Find the perfect service for your needs</p>
+            </div>
+
+            <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <input type="text" placeholder="Search services..." class="form-control" style="flex: 1; min-width: 300px;" class="search-input">
+                <select class="form-control" style="width: 200px;">
+                    <option>All Categories</option>
+                    <option>Web Development</option>
+                    <option>Design</option>
+                    <option>Writing</option>
+                    <option>Marketing</option>
+                </select>
+                <select class="form-control" style="width: 200px;">
+                    <option>Sort By</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Rating</option>
+                    <option>Newest</option>
+                </select>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="assets/images/imgCustomWebsiteDevelopment.jfif" alt="Service" class="card-img">
+                    <h4 class="card-title">Custom Website Development</h4>
+                    <div class="flex flex-between mb-2">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (234)</span>
+                        </div>
+                        <span class="badge badge-success">Top Rated</span>
+                    </div>
+                    <p class="card-body">Professional website development with modern design and responsive layout. Includes 5 pages, contact form, and SEO optimization.</p>
+                    <div class="card-footer">
+                        <span class="price">$500</span>
+                        <a href="service-details.html?service=custom-website-development" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/imgLogoDesignPackage.jfif" alt="Service" class="card-img">
+                    <h4 class="card-title">Logo Design Package</h4>
+                    <div class="flex flex-between mb-2">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.8 (189)</span>
+                        </div>
+                        <span class="badge badge-primary">Popular</span>
+                    </div>
+                    <p class="card-body">Professional logo design with 3 concepts, unlimited revisions, and all file formats included.</p>
+                    <div class="card-footer">
+                        <span class="price">$99</span>
+                        <a href="service-details.html?service=logo-design-package" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/imgSEOOptimization.jfif" alt="Service" class="card-img">
+                    <h4 class="card-title">SEO Content Writing</h4>
+                    <div class="flex flex-between mb-2">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (156)</span>
+                        </div>
+                    </div>
+                    <p class="card-body">SEO-optimized blog posts and articles. 1000 words, keyword research included.</p>
+                    <div class="card-footer">
+                        <span class="price">$75</span>
+                        <a href="service-details.html?service=seo-content-writing" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/imgE-commerceWebsite.png" alt="Service" class="card-img">
+                    <h4 class="card-title">E-commerce Website</h4>
+                    <div class="flex flex-between mb-2">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.7 (312)</span>
+                        </div>
+                    </div>
+                    <p class="card-body">Complete e-commerce solution with payment integration, admin panel, and product management.</p>
+                    <div class="card-footer">
+                        <span class="price">$1,200</span>
+                        <a href="service-details.html?service=ecommerce-store-build" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/imgSocialMediaManagementServices.jfif" alt="Service" class="card-img">
+                    <h4 class="card-title">Social Media Management</h4>
+                    <div class="flex flex-between mb-2">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.8 (98)</span>
+                        </div>
+                    </div>
+                    <p class="card-body">Monthly social media management for 3 platforms. Includes content creation and engagement.</p>
+                    <div class="card-footer">
+                        <span class="price">$299</span>
+                        <a href="service-details.html?service=social-media-management" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/imgVideoEditing.jfif" alt="Service" class="card-img">
+                    <h4 class="card-title">Video Editing</h4>
+                    <div class="flex flex-between mb-2">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (267)</span>
+                        </div>
+                    </div>
+                    <p class="card-body">Professional video editing up to 5 minutes. Includes color correction, transitions, and music.</p>
+                    <div class="card-footer">
+                        <span class="price">$150</span>
+                        <a href="service-details.html?service=video-editing" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/imgUI-UXDesign.jfif" alt="Service" class="card-img">
+                    <h4 class="card-title">UI/UX Design</h4>
+                    <div class="flex flex-between mb-2">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.8 (145)</span>
+                        </div>
+                    </div>
+                    <p class="card-body">Complete UI/UX design for web or mobile app. Includes wireframes, mockups, and prototypes.</p>
+                    <div class="card-footer">
+                        <span class="price">$800</span>
+                        <a href="service-details.html?service=ui-ux-design" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/imgWordPressCustomization.jfif" alt="Service" class="card-img">
+                    <h4 class="card-title">WordPress Customization</h4>
+                    <div class="flex flex-between mb-2">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.7 (223)</span>
+                        </div>
+                    </div>
+                    <p class="card-body">Custom WordPress theme development and plugin integration. Fully responsive design.</p>
+                    <div class="card-footer">
+                        <span class="price">$350</span>
+                        <a href="service-details.html?service=wordpress-customization" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/imgBrandIdentityPackage.jfif" alt="Service" class="card-img">
+                    <h4 class="card-title">Brand Identity Package</h4>
+                    <div class="flex flex-between mb-2">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (178)</span>
+                        </div>
+                    </div>
+                    <p class="card-body">Complete brand identity including logo, color palette, typography, and brand guidelines.</p>
+                    <div class="card-footer">
+                        <span class="price">$450</span>
+                        <a href="service-details.html?service=brand-identity-package" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#">« Previous</a>
+                <span class="active">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">Next »</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FreelanceHub</h4>
+                <p style="color: rgba(255,255,255,0.7);">Connecting talented freelancers with clients worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>For Clients</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Freelancers</h4>
+                <ul>
+                    <li><a href="register.html">Become a Freelancer</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="pricing.html">Earn Money</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FreelanceHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

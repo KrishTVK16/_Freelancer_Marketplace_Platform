@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details - FreelanceHub</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="service-details">
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">F</span>
+                <span>FreelanceHub</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <div class="breadcrumb container">
+        <a href="index.html">Home</a> / <a href="services.html">Services</a> / <span id="service-breadcrumb">Custom Website Development</span>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem; align-items: flex-start;">
+                <div>
+                    <img id="service-hero-image" src="assets/images/imgCustomWebsiteDevelopment.jfif" alt="Custom Website Development" style="width: 100%; border-radius: var(--radius-lg); margin-bottom: 2rem;">
+                    
+                    <div class="card mb-4">
+                        <h2>About This Service</h2>
+                        <div id="service-description">
+                            <p>I will create a professional, fully responsive website tailored to your business needs. Every build starts with brand discovery, wireframes, and performance-first development.</p>
+                            <p>Expect clean, SEO-friendly code, documentation, and a friendly partner who keeps you updated at every milestone.</p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-gray);">
+                                <li>Custom design matching your visual identity</li>
+                                <li>Responsive layouts for desktop, tablet, and mobile</li>
+                                <li>Up to 5 core pages + blog or landing page</li>
+                                <li>Contact form with spam protection and email notifications</li>
+                                <li>Lightweight animations and accessibility best practices</li>
+                                <li>30 days of post-launch support</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>What's Included</h3>
+                        <div id="service-includes" style="margin-top: 1rem;">
+                            <div class="flex flex-between" style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Number of Pages</span>
+                                <strong>5 Core Pages</strong>
+                            </div>
+                            <div class="flex flex-between" style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Design Customization</span>
+                                <strong>Full</strong>
+                            </div>
+                            <div class="flex flex-between" style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Responsive Design</span>
+                                <strong>Included</strong>
+                            </div>
+                            <div class="flex flex-between" style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                                <span>CMS / Blog Setup</span>
+                                <strong>Optional</strong>
+                            </div>
+                            <div class="flex flex-between" style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Revisions</span>
+                                <strong>3 Rounds</strong>
+                            </div>
+                            <div class="flex flex-between" style="padding: 0.75rem 0;">
+                                <span>Delivery Time</span>
+                                <strong>7 Days</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="position: sticky; top: 100px;">
+                        <div class="flex flex-between mb-3">
+                            <div>
+                                <h1 id="service-title" style="margin: 0;">Custom Website Development</h1>
+                                <div class="rating mt-2" id="service-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span>4.9 (234 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin: 2rem 0;">
+                            <div class="price" id="service-price" style="font-size: 2.5rem;">$500</div>
+                            <p style="color: var(--text-gray);" id="service-price-note">Starting from</p>
+                        </div>
+                        <a href="checkout.html?service=custom-website-development" id="service-order-link" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 1rem;">Order Now</a>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Contact Seller</a>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                            <div class="flex gap-2 mb-3">
+                                <img id="service-seller-image" src="assets/images/imgSarahJohnson.jfif" alt="Sarah Johnson" style="width: 60px; height: 60px; border-radius: 50%;">
+                                <div>
+                                    <h4 id="service-seller-name" style="margin: 0;">Sarah Johnson</h4>
+                                    <p id="service-seller-title" style="color: var(--text-gray); font-size: 0.875rem; margin: 0.25rem 0;">Full-Stack Web Developer</p>
+                                    <div class="rating" id="service-seller-rating" style="font-size: 0.875rem;">
+                                        <span class="stars">★★★★★</span>
+                                        <span>4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="freelancer-profile.html?freelancer=sarah-johnson" id="service-seller-link" class="btn btn-outline" style="width: 100%;">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <div class="card">
+                    <h2 id="service-review-count">Reviews (234)</h2>
+                    <div id="service-reviews" style="margin-top: 2rem;">
+                        <div style="padding: 1.5rem 0; border-bottom: 1px solid var(--border-color);">
+                            <div class="flex flex-between mb-2">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <div class="rating" style="font-size: 0.875rem;">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                                <span style="color: var(--text-gray); font-size: 0.875rem;">2 weeks ago</span>
+                            </div>
+                            <p>Excellent work! The website looks professional and works perfectly on all devices. Sarah was very responsive and made all requested changes. Highly recommended!</p>
+                        </div>
+                        <div style="padding: 1.5rem 0; border-bottom: 1px solid var(--border-color);">
+                            <div class="flex flex-between mb-2">
+                                <div>
+                                    <strong>Emily Davis</strong>
+                                    <div class="rating" style="font-size: 0.875rem;">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                                <span style="color: var(--text-gray); font-size: 0.875rem;">1 month ago</span>
+                            </div>
+                            <p>Great experience! The website exceeded our expectations. Fast delivery and great communication throughout the project.</p>
+                        </div>
+                        <div style="padding: 1.5rem 0;">
+                            <div class="flex flex-between mb-2">
+                                <div>
+                                    <strong>Michael Brown</strong>
+                                    <div class="rating" style="font-size: 0.875rem;">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                                <span style="color: var(--text-gray); font-size: 0.875rem;">2 months ago</span>
+                            </div>
+                            <p>Professional service and high-quality work. The website is exactly what I needed for my business. Will definitely work with Sarah again!</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline">Load More Reviews</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FreelanceHub</h4>
+                <p style="color: rgba(255,255,255,0.7);">Connecting talented freelancers with clients worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>For Clients</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Freelancers</h4>
+                <ul>
+                    <li><a href="register.html">Become a Freelancer</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="pricing.html">Earn Money</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FreelanceHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/details.js"></script>
+</body>
+</html>
+

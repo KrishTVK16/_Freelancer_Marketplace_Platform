@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Profile - FreelanceHub</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="freelancer-profile">
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">F</span>
+                <span>FreelanceHub</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="freelancers.html" class="active">Freelancers</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <div class="breadcrumb container">
+        <a href="index.html">Home</a> / <a href="freelancers.html">Freelancers</a> / <span id="freelancer-breadcrumb">Sarah Johnson</span>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem; align-items: flex-start;">
+                <div>
+                    <div class="card" style="text-align: center; margin-bottom: 2rem;">
+                        <img id="freelancer-avatar" src="assets/images/imgSarahJohnson.jfif" alt="Sarah Johnson" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1.5rem; border: 4px solid var(--primary-color);">
+                        <h1 id="freelancer-name">Sarah Johnson</h1>
+                        <p id="freelancer-title" style="color: var(--text-gray); font-size: 1.125rem;">Full-Stack Web Developer</p>
+                        <div class="rating mb-3" id="freelancer-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9 (127 reviews)</span>
+                        </div>
+                        <div class="flex flex-center gap-2 mb-3" id="freelancer-badges">
+                            <span class="badge badge-success">Top Rated</span>
+                            <span class="badge badge-primary">Available Now</span>
+                        </div>
+                        <div style="margin: 2rem 0;">
+                            <div class="price" id="freelancer-rate" style="font-size: 2rem;">$75<small class="price-small">/hour</small></div>
+                        </div>
+                        <div class="flex flex-center gap-2">
+                            <a href="contact.html" class="btn btn-primary">Contact Me</a>
+                            <a href="post-job.html" class="btn btn-outline">Hire Me</a>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <h2>About Me</h2>
+                        <div id="freelancer-about">
+                            <p>I'm a passionate full-stack engineer with 5+ years building SaaS platforms, marketing sites, and custom dashboards for startups and agencies.</p>
+                            <p>I believe in clean architecture, thorough documentation, and proactive communication at every stage of the project.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2>Skills</h2>
+                        <div id="freelancer-skills" style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="badge badge-primary" style="font-size: 1rem; padding: 0.5rem 1rem;">React / Next.js</span>
+                            <span class="badge badge-primary" style="font-size: 1rem; padding: 0.5rem 1rem;">TypeScript</span>
+                            <span class="badge badge-primary" style="font-size: 1rem; padding: 0.5rem 1rem;">Node.js</span>
+                            <span class="badge badge-primary" style="font-size: 1rem; padding: 0.5rem 1rem;">GraphQL</span>
+                            <span class="badge badge-primary" style="font-size: 1rem; padding: 0.5rem 1rem;">MongoDB</span>
+                            <span class="badge badge-primary" style="font-size: 1rem; padding: 0.5rem 1rem;">AWS</span>
+                            <span class="badge badge-primary" style="font-size: 1rem; padding: 0.5rem 1rem;">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card mb-4">
+                        <h2>Portfolio</h2>
+                        <div class="grid grid-2" id="freelancer-portfolio" style="margin-top: 1rem;">
+                            <img src="assets/images/imgCustomWebsiteDevelopment.jfif" alt="Custom Website" style="width: 100%; border-radius: var(--radius-md); cursor: pointer;">
+                            <img src="assets/images/imgE-commerceWebsite.png" alt="E-commerce Build" style="width: 100%; border-radius: var(--radius-md); cursor: pointer;">
+                            <img src="assets/images/imgReactWebApplication.jfif" alt="Web App" style="width: 100%; border-radius: var(--radius-md); cursor: pointer;">
+                            <img src="assets/images/imgWebsiteRedesign.jfif" alt="Website Redesign" style="width: 100%; border-radius: var(--radius-md); cursor: pointer;">
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <h2>Statistics</h2>
+                        <div class="grid grid-2" id="freelancer-stats" style="margin-top: 1rem;">
+                            <div style="text-align: center; padding: 1rem;">
+                                <div class="stat-value" style="font-size: 2.5rem;">127</div>
+                                <div class="stat-label">Completed Projects</div>
+                            </div>
+                            <div style="text-align: center; padding: 1rem;">
+                                <div class="stat-value" style="font-size: 2.5rem;">98%</div>
+                                <div class="stat-label">Client Satisfaction</div>
+                            </div>
+                            <div style="text-align: center; padding: 1rem;">
+                                <div class="stat-value" style="font-size: 2.5rem;">5</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div style="text-align: center; padding: 1rem;">
+                                <div class="stat-value" style="font-size: 2.5rem;">24hr</div>
+                                <div class="stat-label">Avg. Response Time</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2>Education & Certifications</h2>
+                        <div id="freelancer-education" style="margin-top: 1rem;">
+                            <div style="padding: 1rem 0; border-bottom: 1px solid var(--border-color);">
+                                <h4>B.S. Computer Science</h4>
+                                <p style="color: var(--text-gray);">University of Washington · 2015-2019</p>
+                            </div>
+                            <div style="padding: 1rem 0; border-bottom: 1px solid var(--border-color);">
+                                <h4>AWS Certified Developer</h4>
+                                <p style="color: var(--text-gray);">Amazon Web Services · 2021</p>
+                            </div>
+                            <div style="padding: 1rem 0;">
+                                <h4>Meta React Advanced Certification</h4>
+                                <p style="color: var(--text-gray);">Meta · 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <div class="card">
+                    <h2 id="freelancer-review-count">Reviews (127)</h2>
+                    <div id="freelancer-reviews" style="margin-top: 2rem;">
+                        <div style="padding: 1.5rem 0; border-bottom: 1px solid var(--border-color);">
+                            <div class="flex flex-between mb-2">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <div class="rating" style="font-size: 0.875rem;">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                                <span style="color: var(--text-gray); font-size: 0.875rem;">2 weeks ago</span>
+                            </div>
+                            <p>Sarah delivered exactly what we needed and proactively suggested improvements along the way. Highly recommended!</p>
+                        </div>
+                        <div style="padding: 1.5rem 0; border-bottom: 1px solid var(--border-color);">
+                            <div class="flex flex-between mb-2">
+                                <div>
+                                    <strong>Emily Davis</strong>
+                                    <div class="rating" style="font-size: 0.875rem;">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                                <span style="color: var(--text-gray); font-size: 0.875rem;">1 month ago</span>
+                            </div>
+                            <p>Professional, communicative, and fast. The final product exceeded expectations.</p>
+                        </div>
+                        <div style="padding: 1.5rem 0;">
+                            <div class="flex flex-between mb-2">
+                                <div>
+                                    <strong>Michael Brown</strong>
+                                    <div class="rating" style="font-size: 0.875rem;">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                                <span style="color: var(--text-gray); font-size: 0.875rem;">2 months ago</span>
+                            </div>
+                            <p>Clean code, thoughtful documentation, and smooth collaboration. Looking forward to future projects together.</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline">Load More Reviews</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FreelanceHub</h4>
+                <p style="color: rgba(255,255,255,0.7);">Connecting talented freelancers with clients worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>For Clients</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Freelancers</h4>
+                <ul>
+                    <li><a href="register.html">Become a Freelancer</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="pricing.html">Earn Money</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FreelanceHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/details.js"></script>
+</body>
+</html>
+

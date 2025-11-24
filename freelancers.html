@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancers - Freelancer Marketplace Platform</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                <span class="logo-icon">F</span>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">FreelanceHub</span>
+                <span class="logo-subtitle">Find Top Talent & Services</span>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="freelancers.html" class="active">Freelancers</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <div class="breadcrumb container">
+        <a href="index.html">Home</a> / <span>Freelancers</span>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h1>Find Top Freelancers</h1>
+                <p>Browse our talented pool of professionals</p>
+            </div>
+
+            <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <input type="text" placeholder="Search freelancers..." class="form-control" style="flex: 1; min-width: 300px;" class="search-input">
+                <select class="form-control" style="width: 200px;">
+                    <option>All Skills</option>
+                    <option>Web Development</option>
+                    <option>Design</option>
+                    <option>Writing</option>
+                    <option>Marketing</option>
+                </select>
+                <select class="form-control" style="width: 200px;">
+                    <option>Sort By</option>
+                    <option>Rating</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest</option>
+                </select>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="card profile-card">
+                    <img src="assets/images/imgSarahJohnson.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">Sarah Johnson</h4>
+                    <p class="text-gray">Web Developer</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.9 (127)</span>
+                    </div>
+                    <p class="card-body">Expert in React, Node.js, and full-stack development. 5+ years of experience.</p>
+                    <div style="margin: 1rem 0;">
+                        <span class="badge badge-primary">React</span>
+                        <span class="badge badge-primary">Node.js</span>
+                        <span class="badge badge-primary">MongoDB</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">$75<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html?freelancer=sarah-johnson" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <img src="assets/images/imgMichaelChen.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">Michael Chen</h4>
+                    <p class="text-gray">UI/UX Designer</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.8 (98)</span>
+                    </div>
+                    <p class="card-body">Creating beautiful and functional user experiences. Specialized in mobile and web design.</p>
+                    <div style="margin: 1rem 0;">
+                        <span class="badge badge-primary">Figma</span>
+                        <span class="badge badge-primary">Sketch</span>
+                        <span class="badge badge-primary">Adobe XD</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">$65<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html?freelancer=michael-chen" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <img src="assets/images/imgEmilyRodriguez.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">Emily Rodriguez</h4>
+                    <p class="text-gray">Content Writer</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.9 (156)</span>
+                    </div>
+                    <p class="card-body">SEO-optimized content that converts. Expert in blog writing and copywriting.</p>
+                    <div style="margin: 1rem 0;">
+                        <span class="badge badge-primary">SEO</span>
+                        <span class="badge badge-primary">Copywriting</span>
+                        <span class="badge badge-primary">Blogging</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">$45<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html?freelancer=emily-rodriguez" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <img src="assets/images/imgDavidKim.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">David Kim</h4>
+                    <p class="text-gray">Digital Marketer</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.7 (203)</span>
+                    </div>
+                    <p class="card-body">Grow your business with proven marketing strategies. Social media and SEO expert.</p>
+                    <div style="margin: 1rem 0;">
+                        <span class="badge badge-primary">SEO</span>
+                        <span class="badge badge-primary">Social Media</span>
+                        <span class="badge badge-primary">PPC</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">$55<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html?freelancer=david-kim" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <img src="assets/images/imgJessicaMartinez.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">Jessica Martinez</h4>
+                    <p class="text-gray">Video Editor</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.8 (89)</span>
+                    </div>
+                    <p class="card-body">Professional video editing and post-production. Specialized in promotional videos.</p>
+                    <div style="margin: 1rem 0;">
+                        <span class="badge badge-primary">Premiere Pro</span>
+                        <span class="badge badge-primary">After Effects</span>
+                        <span class="badge badge-primary">Final Cut</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">$60<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html?freelancer=jessica-martinez" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <img src="assets/images/imgRobertTaylor.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">Robert Taylor</h4>
+                    <p class="text-gray">Mobile App Developer</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.9 (112)</span>
+                    </div>
+                    <p class="card-body">iOS and Android app development. Expert in React Native and Flutter.</p>
+                    <div style="margin: 1rem 0;">
+                        <span class="badge badge-primary">React Native</span>
+                        <span class="badge badge-primary">Flutter</span>
+                        <span class="badge badge-primary">Swift</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">$85<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html?freelancer=robert-taylor" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <img src="assets/images/imgLisaAnderson.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">Lisa Anderson</h4>
+                    <p class="text-gray">Graphic Designer</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.8 (145)</span>
+                    </div>
+                    <p class="card-body">Creative graphic design for brands. Logo design, branding, and print materials.</p>
+                    <div style="margin: 1rem 0;">
+                        <span class="badge badge-primary">Illustrator</span>
+                        <span class="badge badge-primary">Photoshop</span>
+                        <span class="badge badge-primary">InDesign</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">$50<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html?freelancer=lisa-anderson" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <img src="assets/images/imgJamesWilson.jfif" alt="Freelancer" class="profile-avatar">
+                    <h4 class="card-title">James Wilson</h4>
+                    <p class="text-gray">Data Analyst</p>
+                    <div class="rating mb-2">
+                        <span class="stars">★★★★★</span>
+                        <span>4.7 (78)</span>
+                    </div>
+                    <p class="card-body">Data analysis and visualization. Expert in Python, SQL, and Tableau.</p>
+                    <div style="margin: 1rem 0;">
+                        <span class="badge badge-primary">Python</span>
+                        <span class="badge badge-primary">SQL</span>
+                        <span class="badge badge-primary">Tableau</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">$70<small class="price-small">/hr</small></span>
+                        <a href="freelancer-profile.html?freelancer=james-wilson" class="btn btn-sm btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#">« Previous</a>
+                <span class="active">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">Next »</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FreelanceHub</h4>
+                <p style="color: rgba(255,255,255,0.7);">Connecting talented freelancers with clients worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>For Clients</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Freelancers</h4>
+                <ul>
+                    <li><a href="register.html">Become a Freelancer</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="pricing.html">Earn Money</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FreelanceHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

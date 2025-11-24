@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - Freelancer Marketplace Platform</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                <span class="logo-icon">F</span>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">FreelanceHub</span>
+                <span class="logo-subtitle">Find Top Talent & Services</span>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="client-dashboard.html" class="btn btn-primary">Dashboard</a>
+                <a href="login.html" class="btn btn-outline">Logout</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <div class="breadcrumb container">
+        <a href="index.html">Home</a> / <a href="client-dashboard.html">Dashboard</a> / <span>My Orders</span>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="flex flex-between mb-4">
+                <h1>My Orders</h1>
+                <div class="flex gap-2">
+                    <select class="form-control" style="width: 200px;">
+                        <option>All Status</option>
+                        <option>Active</option>
+                        <option>Completed</option>
+                        <option>Cancelled</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="card mb-2" style="cursor: pointer;" onclick="window.location.href='order-details.html'">
+                    <div class="flex flex-between" style="align-items: start;">
+                        <div style="flex: 1;">
+                            <div class="flex gap-2 mb-2">
+                                <img src="https://via.placeholder.com/80" alt="Service" style="width: 80px; height: 80px; border-radius: var(--radius-md); object-fit: cover;">
+                                <div style="flex: 1;">
+                                    <h3 style="margin: 0 0 0.5rem;">Custom Website Development</h3>
+                                    <p style="color: var(--text-gray); margin: 0 0 0.5rem;">Order #ORD-2024-1234</p>
+                                    <div class="flex gap-2" style="flex-wrap: wrap;">
+                                        <span style="color: var(--text-gray); font-size: 0.875rem;">Freelancer: <strong>Sarah Johnson</strong></span>
+                                        <span style="color: var(--text-gray); font-size: 0.875rem;">•</span>
+                                        <span style="color: var(--text-gray); font-size: 0.875rem;">Placed: Dec 1, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: right; margin-left: 2rem;">
+                            <span class="badge badge-warning">In Progress</span>
+                            <div class="price" style="margin-top: 0.5rem;">$525.00</div>
+                            <a href="order-details.html" class="btn btn-sm btn-outline" style="margin-top: 0.5rem;">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-2" style="cursor: pointer;" onclick="window.location.href='order-details.html'">
+                    <div class="flex flex-between" style="align-items: start;">
+                        <div style="flex: 1;">
+                            <div class="flex gap-2 mb-2">
+                                <img src="https://via.placeholder.com/80" alt="Service" style="width: 80px; height: 80px; border-radius: var(--radius-md); object-fit: cover;">
+                                <div style="flex: 1;">
+                                    <h3 style="margin: 0 0 0.5rem;">Logo Design Package</h3>
+                                    <p style="color: var(--text-gray); margin: 0 0 0.5rem;">Order #ORD-2024-1233</p>
+                                    <div class="flex gap-2" style="flex-wrap: wrap;">
+                                        <span style="color: var(--text-gray); font-size: 0.875rem;">Freelancer: <strong>Michael Chen</strong></span>
+                                        <span style="color: var(--text-gray); font-size: 0.875rem;">•</span>
+                                        <span style="color: var(--text-gray); font-size: 0.875rem;">Placed: Nov 28, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: right; margin-left: 2rem;">
+                            <span class="badge badge-success">Completed</span>
+                            <div class="price" style="margin-top: 0.5rem;">$104.00</div>
+                            <a href="order-details.html" class="btn btn-sm btn-outline" style="margin-top: 0.5rem;">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-2" style="cursor: pointer;" onclick="window.location.href='order-details.html'">
+                    <div class="flex flex-between" style="align-items: start;">
+                        <div style="flex: 1;">
+                            <div class="flex gap-2 mb-2">
+                                <img src="https://via.placeholder.com/80" alt="Service" style="width: 80px; height: 80px; border-radius: var(--radius-md); object-fit: cover;">
+                                <div style="flex: 1;">
+                                    <h3 style="margin: 0 0 0.5rem;">SEO Content Writing</h3>
+                                    <p style="color: var(--text-gray); margin: 0 0 0.5rem;">Order #ORD-2024-1232</p>
+                                    <div class="flex gap-2" style="flex-wrap: wrap;">
+                                        <span style="color: var(--text-gray); font-size: 0.875rem;">Freelancer: <strong>Emily Rodriguez</strong></span>
+                                        <span style="color: var(--text-gray); font-size: 0.875rem;">•</span>
+                                        <span style="color: var(--text-gray); font-size: 0.875rem;">Placed: Nov 25, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: right; margin-left: 2rem;">
+                            <span class="badge badge-success">Completed</span>
+                            <div class="price" style="margin-top: 0.5rem;">$78.75</div>
+                            <a href="order-details.html" class="btn btn-sm btn-outline" style="margin-top: 0.5rem;">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#">« Previous</a>
+                <span class="active">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Next »</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FreelanceHub</h4>
+                <p style="color: rgba(255,255,255,0.7);">Connecting talented freelancers with clients worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>For Clients</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Freelancers</h4>
+                <ul>
+                    <li><a href="register.html">Become a Freelancer</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="pricing.html">Earn Money</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FreelanceHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

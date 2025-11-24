@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Freelancer Marketplace Platform</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                <span class="logo-icon">F</span>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">FreelanceHub</span>
+                <span class="logo-subtitle">Find Top Talent & Services</span>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <div class="breadcrumb container">
+        <a href="index.html">Home</a> / <a href="service-details.html">Service</a> / <span>Checkout</span>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+                <div>
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <h2>Order Summary</h2>
+                        <div style="margin-top: 1.5rem;">
+                            <div class="flex gap-2 mb-3">
+                                <img src="https://via.placeholder.com/100" alt="Service" style="width: 100px; height: 100px; border-radius: var(--radius-md); object-fit: cover;">
+                                <div style="flex: 1;">
+                                    <h4 style="margin: 0 0 0.5rem;">Custom Website Development</h4>
+                                    <p style="color: var(--text-gray); font-size: 0.875rem; margin: 0 0 0.5rem;">by Sarah Johnson</p>
+                                    <div class="price">$500</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <h2>Payment Method</h2>
+                        <form style="margin-top: 1.5rem;">
+                            <div class="form-group">
+                                <label class="form-label">Card Number *</label>
+                                <input type="text" class="form-control" placeholder="1234 5678 9012 3456" required>
+                            </div>
+                            <div class="grid grid-2">
+                                <div class="form-group">
+                                    <label class="form-label">Expiry Date *</label>
+                                    <input type="text" class="form-control" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">CVV *</label>
+                                    <input type="text" class="form-control" placeholder="123" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Cardholder Name *</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox">
+                                    <span style="font-size: 0.875rem;">Save card for future purchases</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="card">
+                        <h2>Billing Address</h2>
+                        <form style="margin-top: 1.5rem;">
+                            <div class="form-group">
+                                <label class="form-label">Street Address *</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="grid grid-2">
+                                <div class="form-group">
+                                    <label class="form-label">City *</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">State *</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="grid grid-2">
+                                <div class="form-group">
+                                    <label class="form-label">ZIP Code *</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Country *</label>
+                                    <select class="form-control" required>
+                                        <option>United States</option>
+                                        <option>Canada</option>
+                                        <option>United Kingdom</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="position: sticky; top: 100px;">
+                        <h2>Order Total</h2>
+                        <div style="margin-top: 1.5rem;">
+                            <div class="flex flex-between" style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Subtotal</span>
+                                <strong>$500.00</strong>
+                            </div>
+                            <div class="flex flex-between" style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Service Fee</span>
+                                <strong>$25.00</strong>
+                            </div>
+                            <div class="flex flex-between" style="padding: 1rem 0; margin-top: 1rem;">
+                                <span style="font-size: 1.25rem; font-weight: 600;">Total</span>
+                                <span class="price" style="font-size: 1.5rem;">$525.00</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                            <div style="background: var(--bg-light); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1rem;">
+                                <p style="font-size: 0.875rem; color: var(--text-gray); margin: 0;">
+                                    🔒 Your payment is secure and encrypted. Funds are held in escrow until work is completed.
+                                </p>
+                            </div>
+                            <a href="order-success.html" class="btn btn-primary btn-lg" style="width: 100%;">Complete Order</a>
+                            <p style="text-align: center; font-size: 0.875rem; color: var(--text-gray); margin-top: 1rem;">
+                                By placing this order, you agree to our <a href="terms.html">Terms of Service</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FreelanceHub</h4>
+                <p style="color: rgba(255,255,255,0.7);">Connecting talented freelancers with clients worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>For Clients</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Freelancers</h4>
+                <ul>
+                    <li><a href="register.html">Become a Freelancer</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="pricing.html">Earn Money</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FreelanceHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
