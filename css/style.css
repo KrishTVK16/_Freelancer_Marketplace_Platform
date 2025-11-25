@@ -174,6 +174,7 @@ header + * {
 
 .nav-links li {
     margin: 0;
+    position: relative;
 }
 
 .nav-links a {
@@ -182,6 +183,67 @@ header + * {
     color: var(--text-dark);
     font-weight: 500;
     transition: color 0.3s ease;
+}
+
+/* Navigation Dropdown */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > a {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    background: var(--bg-white);
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-md);
+    padding: 0.5rem 0;
+    min-width: 180px;
+    z-index: 1001;
+    list-style: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown.active .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: var(--bg-light);
+    color: var(--primary-color);
+}
+
+/* Prevent dropdown from closing when moving mouse */
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown.active .dropdown-menu {
+    display: block;
 }
 
 .nav-links a.active,
@@ -353,6 +415,27 @@ a.btn,
         padding: 2rem 2rem 1.5rem;
         box-shadow: var(--shadow-lg);
         z-index: 999;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        box-shadow: none;
+        padding: 0.5rem 0 0.5rem 1.5rem;
+        margin-top: 0;
+        background: var(--bg-light);
+        border-radius: var(--radius-sm);
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+    }
+
+    .nav-dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    .nav-dropdown > a {
+        cursor: pointer;
     }
 
     /* Show nav-links when active class toggled */

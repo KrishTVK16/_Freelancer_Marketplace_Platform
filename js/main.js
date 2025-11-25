@@ -24,6 +24,127 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Navigation Dropdown Toggle
+    const navDropdowns = document.querySelectorAll('.nav-dropdown');
+    const dropdownTimeouts = new Map(); // Store timeouts for each dropdown
+    
+    navDropdowns.forEach(dropdown => {
+        // Get the first direct child anchor tag (more compatible approach)
+        const dropdownLink = dropdown.children[0] && dropdown.children[0].tagName === 'A' 
+            ? dropdown.children[0] 
+            : dropdown.querySelector('a');
+        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
+        if (dropdownLink && dropdownMenu) {
+            // Clear timeout function for this specific dropdown
+            const clearDropdownTimeout = () => {
+                if (dropdownTimeouts.has(dropdown)) {
+                    clearTimeout(dropdownTimeouts.get(dropdown));
+                    dropdownTimeouts.delete(dropdown);
+                }
+            };
+            
+            // Click handler for desktop and mobile
+            dropdownLink.addEventListener('click', function(e) {
+                // Only prevent default if dropdown menu exists
+                if (dropdownMenu) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                
+                clearDropdownTimeout();
+                
+                // Close other dropdowns
+                navDropdowns.forEach(otherDropdown => {
+                    if (otherDropdown !== dropdown) {
+                        otherDropdown.classList.remove('active');
+                        // Clear other dropdowns' timeouts
+                        if (dropdownTimeouts.has(otherDropdown)) {
+                            clearTimeout(dropdownTimeouts.get(otherDropdown));
+                            dropdownTimeouts.delete(otherDropdown);
+                        }
+                    }
+                });
+                
+                // Toggle current dropdown
+                dropdown.classList.toggle('active');
+            });
+            
+            // Keep dropdown open when hovering (desktop)
+            dropdown.addEventListener('mouseenter', function() {
+                clearDropdownTimeout();
+                dropdown.classList.add('active');
+            });
+            
+            dropdown.addEventListener('mouseleave', function() {
+                clearDropdownTimeout();
+                // Delay closing for 10 seconds (10000ms) or until user clicks outside
+                const timeoutId = setTimeout(() => {
+                    if (!dropdown.matches(':hover')) {
+                        dropdown.classList.remove('active');
+                    }
+                    dropdownTimeouts.delete(dropdown);
+                }, 10000); // 10 seconds delay
+                dropdownTimeouts.set(dropdown, timeoutId);
+            });
+            
+            // Keep dropdown open when hovering over menu
+            dropdownMenu.addEventListener('mouseenter', function() {
+                clearDropdownTimeout();
+                dropdown.classList.add('active');
+            });
+            
+            dropdownMenu.addEventListener('mouseleave', function() {
+                clearDropdownTimeout();
+                // Delay closing for 10 seconds
+                const timeoutId = setTimeout(() => {
+                    dropdown.classList.remove('active');
+                    dropdownTimeouts.delete(dropdown);
+                }, 10000); // 10 seconds delay
+                dropdownTimeouts.set(dropdown, timeoutId);
+            });
+            
+            // Prevent dropdown from closing when clicking inside
+            dropdownMenu.addEventListener('click', function(e) {
+                clearDropdownTimeout();
+                e.stopPropagation();
+            });
+        }
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-dropdown')) {
+            // Clear all timeouts and close all dropdowns immediately when clicking outside
+            dropdownTimeouts.forEach((timeoutId) => {
+                clearTimeout(timeoutId);
+            });
+            dropdownTimeouts.clear();
+            
+            navDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+    
+    // Close dropdowns on window resize (mobile menu toggle)
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 820) {
+            // Clear all timeouts on resize
+            dropdownTimeouts.forEach((timeoutId) => {
+                clearTimeout(timeoutId);
+            });
+            dropdownTimeouts.clear();
+            
+            // Reset dropdowns on desktop
+            navDropdowns.forEach(dropdown => {
+                if (!dropdown.matches(':hover')) {
+                    dropdown.classList.remove('active');
+                }
+            });
+        }
+    });
+
     // Form Validation
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {
