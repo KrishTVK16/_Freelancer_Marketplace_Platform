@@ -145,6 +145,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Accordion Functionality
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        if (header) {
+            header.addEventListener('click', function() {
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        }
+    });
+
+    // FAQ Section Toggle
+    const faqSectionToggle = document.querySelector('.faq-section-toggle');
+    const faqSectionContainer = document.querySelector('.faq-section-container');
+    if (faqSectionToggle && faqSectionContainer) {
+        faqSectionToggle.addEventListener('click', function() {
+            faqSectionContainer.classList.toggle('collapsed');
+        });
+    }
+
     // Form Validation
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {
