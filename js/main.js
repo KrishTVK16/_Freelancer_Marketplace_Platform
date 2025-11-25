@@ -4,10 +4,23 @@
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
+    const navActions = document.querySelector('.nav-actions');
     
     if (mobileMenuToggle) {
         mobileMenuToggle.addEventListener('click', function() {
             navLinks.classList.toggle('active');
+            if (navActions) {
+                navActions.classList.toggle('active');
+                // Calculate and set top position for nav-actions based on nav-links height
+                if (navActions.classList.contains('active') && navLinks.classList.contains('active')) {
+                    const navLinksHeight = navLinks.offsetHeight;
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const spacing = 24; // 1.5rem in pixels
+                    navActions.style.top = (navbarHeight + spacing + navLinksHeight) + 'px';
+                } else {
+                    navActions.style.top = '';
+                }
+            }
         });
     }
 

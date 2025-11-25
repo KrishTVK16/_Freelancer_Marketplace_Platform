@@ -1,6 +1,6 @@
 const categoryDetailsData = {
     'web-development': {
-        title: 'Web Development',
+        title: 'Web Designing',
         icon: '💻',
         servicesCount: '5,234 Services Available',
         description: [
