@@ -55,23 +55,89 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelector('.nav-links');
     const navActions = document.querySelector('.nav-actions');
     
+    function isMenuOpen() {
+        return navLinks && navLinks.classList.contains('active');
+    }
+    
+    function openMenu() {
+        if (navLinks) {
+            navLinks.classList.add('active');
+        }
+        if (navActions) {
+            navActions.classList.add('active');
+        }
+    }
+    
+    function closeMenu() {
+        if (navLinks) {
+            navLinks.classList.remove('active');
+        }
+        if (navActions) {
+            navActions.classList.remove('active');
+        }
+    }
+    
+    function toggleMenu() {
+        if (isMenuOpen()) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    }
+    
+    // Toggle menu on hamburger click
     if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            if (navActions) {
-                navActions.classList.toggle('active');
-                // Calculate and set top position for nav-actions based on nav-links height
-                if (navActions.classList.contains('active') && navLinks.classList.contains('active')) {
-                    const navLinksHeight = navLinks.offsetHeight;
-                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                    const spacing = 24; // 1.5rem in pixels
-                    navActions.style.top = (navbarHeight + spacing + navLinksHeight) + 'px';
-                } else {
-                    navActions.style.top = '';
-                }
+        mobileMenuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            toggleMenu();
+        });
+    }
+    
+    // Close menu when clicking on navigation links (except dropdown toggles)
+    if (navLinks) {
+        navLinks.addEventListener('click', function(e) {
+            const clickedLink = e.target.closest('a');
+            // Don't close if clicking dropdown toggle
+            if (clickedLink && clickedLink.closest('.nav-dropdown') && !clickedLink.closest('.dropdown-menu')) {
+                return;
+            }
+            // Close for all other links
+            if (clickedLink) {
+                closeMenu();
             }
         });
     }
+    
+    // Close menu when clicking action buttons
+    if (navActions) {
+        navActions.addEventListener('click', function(e) {
+            const target = e.target.closest('a, button');
+            if (target && (target.classList.contains('btn') || target.classList.contains('theme-toggle'))) {
+                setTimeout(closeMenu, 150);
+            }
+        });
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!isMenuOpen()) return;
+        
+        // Check if click is outside the menu
+        const isClickInsideMenu = navLinks && navLinks.contains(e.target);
+        const isClickOnToggle = mobileMenuToggle && mobileMenuToggle.contains(e.target);
+        const isClickInActions = navActions && navActions.contains(e.target);
+        
+        if (!isClickInsideMenu && !isClickOnToggle && !isClickInActions) {
+            closeMenu();
+        }
+    });
+    
+    // Close menu on window resize if it becomes desktop view
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 820) {
+            closeMenu();
+        }
+    });
 
     // Navigation Dropdown Toggle
     const navDropdowns = document.querySelectorAll('.nav-dropdown');
