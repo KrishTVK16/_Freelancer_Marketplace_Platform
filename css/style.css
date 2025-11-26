@@ -46,6 +46,39 @@
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
 }
 
+/* ============================================
+   Animations & Keyframes
+   ============================================ */
+
+@keyframes glowPulse {
+    0%, 100% {
+        filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.6)) drop-shadow(0 0 8px rgba(99, 102, 241, 0.4));
+        text-shadow: 0 0 35px rgba(99, 102, 241, 0.5), 0 0 15px rgba(99, 102, 241, 0.3);
+    }
+    50% {
+        filter: drop-shadow(0 0 25px rgba(99, 102, 241, 0.8)) drop-shadow(0 0 12px rgba(99, 102, 241, 0.6));
+        text-shadow: 0 0 50px rgba(99, 102, 241, 0.7), 0 0 25px rgba(99, 102, 241, 0.5);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes glowRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -329,6 +362,15 @@ header + * {
     box-shadow: var(--shadow-md);
 }
 
+/* Ensure .btn-sm and .btn-lg inherit hover effects from their color classes */
+.btn-sm.btn-primary:hover,
+.btn-lg.btn-primary:hover {
+    background: var(--primary-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
 .btn-primary:focus {
     outline: 2px solid var(--primary-light);
     outline-offset: 2px;
@@ -425,6 +467,15 @@ button.btn[style*="display: block"] {
     box-shadow: var(--shadow-md);
 }
 
+/* Ensure .btn-sm and .btn-lg inherit hover effects for secondary */
+.btn-sm.btn-secondary:hover,
+.btn-lg.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
 .btn-outline {
     background: transparent;
     color: var(--text-dark);
@@ -432,6 +483,15 @@ button.btn[style*="display: block"] {
 }
 
 .btn-outline:hover {
+    background: var(--bg-gray);
+    border-color: var(--text-gray);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Ensure .btn-sm and .btn-lg inherit hover effects for outline */
+.btn-sm.btn-outline:hover,
+.btn-lg.btn-outline:hover {
     background: var(--bg-gray);
     border-color: var(--text-gray);
     transform: translateY(-2px);
@@ -1894,5 +1954,182 @@ footer {
     max-height: 0;
     opacity: 0;
     margin: 0;
+}
+
+/* ============================================
+   Stats Card Styling - Fixed Size with Responsive
+   ============================================ */
+
+.stats-section {
+    padding: 4rem 0 !important;
+}
+
+.stats-card {
+    width: 100%;
+    min-height: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--bg-white);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, rgba(99, 102, 241, 0.05) 50%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.stats-card:hover::before {
+    opacity: 1;
+    animation: glowRotate 3s linear infinite;
+}
+
+.stats-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.stats-number {
+    font-size: 2.75rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 0.75rem 0;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 0 40px rgba(99, 102, 241, 0.4), 0 0 20px rgba(99, 102, 241, 0.2);
+    filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.5)) drop-shadow(0 0 8px rgba(99, 102, 241, 0.3));
+    animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+.stats-label {
+    font-size: 1rem;
+    background: linear-gradient(90deg, var(--text-gray) 0%, var(--text-dark) 50%, var(--text-gray) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(99, 102, 241, 0.25), 0 15px 35px rgba(0, 0, 0, 0.15);
+    background: var(--bg-white);
+    border-color: var(--primary-color);
+}
+
+.stats-card:hover .stats-number {
+    animation: glowPulse 1.5s ease-in-out infinite;
+    filter: drop-shadow(0 0 30px rgba(99, 102, 241, 0.8)) drop-shadow(0 0 15px rgba(99, 102, 241, 0.6));
+    text-shadow: 0 0 60px rgba(99, 102, 241, 0.7), 0 0 30px rgba(99, 102, 241, 0.5);
+}
+
+.stats-card:hover .stats-label {
+    animation: glowPulse 2s ease-in-out infinite;
+}
+
+/* Responsive: Tablet View */
+@media (max-width: 1024px) {
+    .stats-card {
+        min-height: 200px;
+        height: 200px;
+        padding: 1.5rem 1rem;
+    }
+
+    .stats-number {
+        font-size: 2.25rem;
+    }
+
+    .stats-label {
+        font-size: 0.95rem;
+    }
+
+    .stats-section {
+        padding: 3rem 0 !important;
+    }
+}
+
+/* Responsive: Mobile View */
+@media (max-width: 768px) {
+    .stats-section .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+
+    .stats-card {
+        min-height: 180px;
+        height: 180px;
+        padding: 1.25rem 1rem;
+    }
+
+    .stats-number {
+        font-size: 1.875rem;
+    }
+
+    .stats-label {
+        font-size: 0.875rem;
+    }
+
+    .stats-section {
+        padding: 2.5rem 0 !important;
+    }
+}
+
+/* Responsive: Small Mobile View */
+@media (max-width: 480px) {
+    .stats-section .grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    .stats-card {
+        min-height: 160px;
+        height: 160px;
+        padding: 1rem 0.75rem;
+    }
+
+    .stats-number {
+        font-size: 1.5rem;
+    }
+
+    .stats-label {
+        font-size: 0.8rem;
+    }
+
+    .stats-section {
+        padding: 2rem 0 !important;
+    }
+}
+
+/* ============================================
+   Stats Card Hover Effects
+   ============================================ */
+
+.card.text-center[style*="padding: 2rem"]:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    background: var(--bg-white);
+    border-color: var(--primary-color);
 }
 
