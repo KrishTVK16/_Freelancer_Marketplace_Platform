@@ -1,5 +1,54 @@
 // Freelancer Marketplace Platform - Main JavaScript
 
+// Theme Toggle Functionality
+(function() {
+    // Apply saved theme or default to light mode
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+    } else {
+        document.documentElement.classList.remove('dark-mode');
+    }
+    
+    // Theme toggle handler
+    function initThemeToggle() {
+        const themeToggle = document.querySelector('.theme-toggle');
+        if (!themeToggle) return;
+        
+        // Update icon based on current theme
+        function updateIcon() {
+            const isDark = document.documentElement.classList.contains('dark-mode');
+            themeToggle.textContent = isDark ? '☀️' : '🌙';
+            themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+        }
+        
+        // Initial icon update
+        updateIcon();
+        
+        // Toggle theme on click
+        themeToggle.addEventListener('click', function() {
+            const isDark = document.documentElement.classList.contains('dark-mode');
+            
+            if (isDark) {
+                document.documentElement.classList.remove('dark-mode');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            }
+            
+            updateIcon();
+        });
+    }
+    
+    // Initialize theme toggle when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initThemeToggle);
+    } else {
+        initThemeToggle();
+    }
+})();
+
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
