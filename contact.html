@@ -42,80 +42,78 @@
                 <p>We're here to help! Reach out to us with any questions or concerns.</p>
             </div>
 
-            <div class="grid grid-2" style="gap: 3rem; align-items: start;">
-                <div>
-                    <div class="card" style="margin-bottom: 2rem;">
-                        <h2>Contact Information</h2>
-                        <div style="margin-top: 2rem;">
-                            <div style="margin-bottom: 2rem;">
-                                <h4>📍 Address</h4>
-                                <p><a href="https://maps.google.com/?q=123+Business+Street+New+York+NY+10001" target="_blank" rel="noopener noreferrer" style="color: var(--text-gray);">123 Business Street<br>Suite 100<br>New York, NY 10001<br>United States</a></p>
-                            </div>
-                            <div style="margin-bottom: 2rem;">
-                                <h4>📧 Email</h4>
-                                <p><a href="mailto:support@freelancehub.com">support@freelancehub.com</a><br>
-                                <a href="mailto:info@freelancehub.com">info@freelancehub.com</a></p>
-                            </div>
-                            <div style="margin-bottom: 2rem;">
-                                <h4>📞 Phone</h4>
-                                <p><a href="tel:+15551234567" style="color: var(--text-gray);">+1 (555) 123-4567</a><br>Mon-Fri, 9am-6pm EST</p>
-                            </div>
-                            <div>
-                                <h4>💬 Live Chat</h4>
-                                <p>Available 24/7 for premium members</p>
-                                <a href="#" class="btn btn-primary mt-2" style="display: block;">Start Chat</a>
-                            </div>
+            <div class="grid grid-2" style="gap: 3rem; align-items: stretch;">
+                <div class="card">
+                    <h2>Contact Information</h2>
+                    <div style="margin-top: 2rem; flex: 1; display: flex; flex-direction: column;">
+                        <div style="margin-bottom: 2rem;">
+                            <h4>📍 Address</h4>
+                            <p><a href="https://maps.google.com/?q=123+Business+Street+New+York+NY+10001" target="_blank" rel="noopener noreferrer" style="color: var(--text-gray);">123 Business Street<br>Suite 100<br>New York, NY 10001<br>United States</a></p>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>Follow Us</h3>
-                        <div class="social-icons" style="justify-content: center;">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">
-                                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook.png" alt="Facebook" style="width: 24px; height: 24px;">
-                            </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">
-                                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png" alt="Twitter" style="width: 24px; height: 24px;">
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">
-                                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;">
-                            </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
-                                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
-                            </a>
+                        <div style="margin-bottom: 2rem;">
+                            <h4>📧 Email</h4>
+                            <p><a href="mailto:support@freelancehub.com">support@freelancehub.com</a><br>
+                            <a href="mailto:info@freelancehub.com">info@freelancehub.com</a></p>
+                        </div>
+                        <div style="margin-bottom: 2rem;">
+                            <h4>📞 Phone</h4>
+                            <p><a href="tel:+15551234567" style="color: var(--text-gray);">+1 (555) 123-4567</a><br>Mon-Fri, 9am-6pm EST</p>
+                        </div>
+                        <div style="margin-top: auto;">
+                            <h4>💬 Live Chat</h4>
+                            <p>Available 24/7 for premium members</p>
+                            <a href="#" class="btn btn-primary mt-2" style="display: block;">Start Chat</a>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <div class="card">
-                        <h2>Send Us a Message</h2>
-                        <form style="margin-top: 2rem;">
-                            <div class="form-group">
-                                <label class="form-label">Name *</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Email *</label>
-                                <input type="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Subject *</label>
-                                <select class="form-control" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="support">Technical Support</option>
-                                    <option value="billing">Billing Question</option>
-                                    <option value="partnership">Partnership Opportunity</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Message *</label>
-                                <textarea class="form-control" rows="6" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
-                        </form>
+                <div class="card">
+                    <h2>Send Us a Message</h2>
+                    <form style="margin-top: 2rem; flex: 1; display: flex; flex-direction: column;">
+                        <div class="form-group">
+                            <label class="form-label">Name *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email *</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Subject *</label>
+                            <select class="form-control" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="flex: 1; display: flex; flex-direction: column;">
+                            <label class="form-label">Message *</label>
+                            <textarea class="form-control" rows="6" required style="flex: 1;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: auto;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <div class="card" style="margin-bottom: 0;">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons" style="justify-content: center;">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook.png" alt="Facebook" style="width: 24px; height: 24px;">
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="Twitter">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png" alt="Twitter" style="width: 24px; height: 24px;">
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+                        </a>
                     </div>
                 </div>
             </div>
