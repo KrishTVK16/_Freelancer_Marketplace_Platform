@@ -185,40 +185,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 dropdown.classList.toggle('active');
             });
             
-            // Keep dropdown open when hovering (desktop)
-            dropdown.addEventListener('mouseenter', function() {
-                clearDropdownTimeout();
-                dropdown.classList.add('active');
-            });
-            
-            dropdown.addEventListener('mouseleave', function() {
-                clearDropdownTimeout();
-                // Delay closing for 10 seconds (10000ms) or until user clicks outside
-                const timeoutId = setTimeout(() => {
-                    if (!dropdown.matches(':hover')) {
-                        dropdown.classList.remove('active');
-                    }
-                    dropdownTimeouts.delete(dropdown);
-                }, 10000); // 10 seconds delay
-                dropdownTimeouts.set(dropdown, timeoutId);
-            });
-            
-            // Keep dropdown open when hovering over menu
-            dropdownMenu.addEventListener('mouseenter', function() {
-                clearDropdownTimeout();
-                dropdown.classList.add('active');
-            });
-            
-            dropdownMenu.addEventListener('mouseleave', function() {
-                clearDropdownTimeout();
-                // Delay closing for 10 seconds
-                const timeoutId = setTimeout(() => {
-                    dropdown.classList.remove('active');
-                    dropdownTimeouts.delete(dropdown);
-                }, 10000); // 10 seconds delay
-                dropdownTimeouts.set(dropdown, timeoutId);
-            });
-            
             // Prevent dropdown from closing when clicking inside
             dropdownMenu.addEventListener('click', function(e) {
                 clearDropdownTimeout();
@@ -253,9 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Reset dropdowns on desktop
             navDropdowns.forEach(dropdown => {
-                if (!dropdown.matches(':hover')) {
-                    dropdown.classList.remove('active');
-                }
+                dropdown.classList.remove('active');
             });
         }
     });

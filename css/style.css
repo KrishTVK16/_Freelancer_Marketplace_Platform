@@ -274,7 +274,6 @@ header + * {
     pointer-events: none;
 }
 
-.nav-dropdown:hover .dropdown-menu,
 .nav-dropdown.active .dropdown-menu {
     display: block;
     opacity: 1;
@@ -299,8 +298,7 @@ header + * {
     color: var(--primary-color);
 }
 
-/* Prevent dropdown from closing when moving mouse */
-.nav-dropdown:hover .dropdown-menu,
+/* Dropdown menu display when active */
 .nav-dropdown.active .dropdown-menu {
     display: block;
 }
@@ -842,6 +840,13 @@ button.btn[style*="display: block"] {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        font-size: 1rem;
+        max-width: 100%;
+        padding: 0 1rem;
+        line-height: 1.5;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .grid-2,
@@ -952,6 +957,35 @@ button.btn[style*="display: block"] {
     color: var(--text-gray);
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Responsive font size adjustments for section subtitles */
+@media (max-width: 1024px) {
+    .section-title p {
+        font-size: 1.05rem;
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title p {
+        font-size: 0.95rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title p {
+        font-size: 0.875rem;
+        padding: 0 0.75rem;
+        line-height: 1.5;
+    }
 }
 
 /* ============================================
